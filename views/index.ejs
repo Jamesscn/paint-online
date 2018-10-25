@@ -1,0 +1,44 @@
+<!doctype html>
+<http>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+        <title>Paint Online</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Paint Online</h1>
+        </div>
+        <div id="app">
+            <div v-if="menu" id="menu" class="container">
+                <h4>Welcome to Paint Online!</h4>
+                <p>Pick a username: </p>
+                <input type="text" name="username" v-model="username"></input>
+                <button id="submit" v-on:click="enter">Enter</button>
+            </div>
+            <div v-show="!menu" class="drawcontainer">
+                <div>
+                    <canvas id="drawspace" width="1200" height="600"></canvas>
+                    <a v-show="!menu" id="download" download="drawing.png"><button>Download</button></a>
+                    <input type="text" v-model="brushSize" value="1"></input>
+                </div>
+                <div id="colours">
+                    <i class="material-icons large" id="eraser">close</i>
+                    <i class="material-icons large" id="white">palette</i>
+                    <i class="material-icons large" id="red">palette</i>
+                    <i class="material-icons large" id="orange">palette</i>
+                    <i class="material-icons large" id="yellow">palette</i>
+                    <i class="material-icons large" id="green">palette</i>
+                    <i class="material-icons large" id="cyan">palette</i>
+                    <i class="material-icons large" id="blue">palette</i>
+                    <i class="material-icons large" id="purple">palette</i>
+                    <i class="material-icons large" id="pink">palette</i>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</http>

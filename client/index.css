@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b0ca87;
+}
+
+h1, h2, h3, h4, h5, h6, a, i {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h4 {
+    padding-bottom: 5px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+}
+
+i {
+    background-color: rgb(36, 36, 36);
+}
+
+.container {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.drawcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.large {
+    font-size: 60px;
+}
+
+#header {
+    padding: 10px;
+    text-align: center;
+    background-color: #809848;
+    color: white;
+}
+
+#drawspace {
+    display: block;
+}
+
+#colours {
+    max-width: 60px;
+}
+
+#eraser {
+    color: rgb(255, 255, 255)
+}
+
+#white {
+    color: rgb(255, 255, 255);
+}
+
+#red {
+    color: rgb(255, 0, 0);
+}
+
+#orange {
+    color: rgb(255, 127, 0);
+}
+
+#yellow {
+    color: rgb(255, 255, 0);
+}
+
+#green {
+    color: rgb(0, 255, 0);
+}
+
+#cyan {
+    color: rgb(0, 255, 255);
+}
+
+#blue {
+    color: rgb(0, 0, 255);
+}
+
+#purple {
+    color: rgb(255, 0, 255);
+}
+
+#pink {
+    color: rgb(255, 0, 128);
+}

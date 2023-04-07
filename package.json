@@ -9,7 +9,7 @@
   "author": "Jamesscn",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.7",
+    "ejs": "^3.1.9",
     "express": "^4.16.3",
     "socket.io": "^2.5.0"
   }
